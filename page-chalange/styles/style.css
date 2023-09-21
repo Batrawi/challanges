@@ -1,0 +1,141 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;400&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+/* general */
+a {
+  text-decoration: none;
+  color: #000;
+}
+ul {
+  list-style: none;
+}
+
+:root {
+  --primary-color: #008aaa;
+  --secondary-color: #d1884f;
+  --accent-color: #3bbadb;
+}
+
+/* nav style */
+nav {
+  width: 80%;
+  margin: 0 auto;
+  padding: 20px 0;
+  display: flex;
+  padding-top: 60px;
+  align-items: center;
+  justify-content: flex-end;
+}
+nav ul {
+  display: flex;
+  justify-content: flex-end;
+  width: 50%;
+  gap: 82px;
+}
+
+.nav-a:hover {
+  color: var(--secondary-color);
+}
+
+/* main style */
+main {
+  width: 80%;
+  margin: 0 auto;
+}
+.container {
+  margin: 0 auto;
+  width: 100%;
+}
+.hero-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 88px;
+}
+.hero-content {
+  width: 50%;
+}
+h3 {
+  font-size: 1.5rem;
+  font-weight: 400;
+  margin-bottom: 35px;
+  color: var(--accent-color);
+}
+.hero-title {
+  font-size: 2.5rem;
+  color: var(--primary-color);
+  width: 78%;
+  margin-bottom: 32px;
+}
+span.career {
+  color: var(--secondary-color);
+}
+span.see-more a {
+  color: var(--accent-color);
+}
+
+p {
+  font-size: 1.1rem;
+  line-height: 1.5;
+  color: #000;
+  margin-bottom: 50px;
+}
+
+.btn {
+  padding: 5px 22px;
+  border-radius: 5px;
+  cursor: pointer;
+  letter-spacing: 1px;
+}
+.primary-btn {
+  background-color: var(--primary-color);
+  color: #fff;
+  border: none;
+  margin-right: 18px;
+  box-shadow: var(--accent-color) 0px 7px 10px -4px;
+}
+.secondary-btn {
+  background-color: #fff;
+  color: var(--accent-color);
+  border: solid 1px var(--accent-color);
+  box-shadow: var(--accent-color) 0px 5px 8px -6px;
+}
+
+.img-container{
+  display:flex;
+  justify-content: flex-end;
+  width: 50%;
+}
+.hero-img {
+  width: 50%;
+  height: 100%;
+  /* display: flex;
+  justify-content: flex-end; */
+  position: relative;
+}
+.hero-img img {
+  width: 60%;
+  object-fit: cover;
+  border-radius: 0 0 0 50%;
+}
+.hero-img::before {
+  content: "";
+  position: absolute;
+  /* width: 100%;
+  height: 100%; */
+  background-color: var(--accent-color);
+  opacity: 0.2;
+  border-radius: 0 0 0 50%;
+  /* z-index: -1; */
+  top:30px;
+left:-20px;
+right:10px;
+}
+
