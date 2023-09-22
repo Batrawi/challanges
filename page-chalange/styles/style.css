@@ -136,3 +136,42 @@ p {
   top: 21px;
   right: 20px;
 }
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  nav ul {
+    gap: 20px;
+  }
+  .hero-section {
+    flex-direction: column;
+    align-items: center;
+  }
+  .hero-content {
+    width: 100%;
+    text-align: center;
+  }
+  .img-container {
+    display: none;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+  .hero-section {
+    margin-top: 40px;
+  }
+}
+
+@media (min-width: 1025px) {
+  nav ul {
+    gap: 82px;
+  }
+  .hero-section {
+    margin-top: 88px;
+  }
+  .hero-content {
+    width: 50%;
+  }
+  .img-container {
+    display: flex;
+  }
+}
