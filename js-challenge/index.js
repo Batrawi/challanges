@@ -1,32 +1,24 @@
 const getMissingNumber = (nums) => {
-  const n = nums.length;
+  
+  const uniqueNums = [... new Set(nums)];
+  const n = uniqueNums.length;
 
-  for (let i = 0; i < n; i++) {
-    for (let j = i + 1; j < n; j++) {
-      if (nums[i] === nums[j]) {
-        return `There is a duplicated number: ${nums[i]}`;
-      }
-    }
-  }
+  uniqueNums.sort((a, b) => a - b);
 
-  nums.sort((a, b) => a - b);
-
-  if (nums[0] !== 0) {
+  if (uniqueNums[0] !== 0) {
     return "Your array doesn't start with 0";
   }
 
-  let missingNum;
+  if (uniqueNums[n-1]===n-1) return n; // check for [0,1]
 
-  for (let i = 0; i < nums.length; i++) {
-    if (nums[i] !== i) {
-      return missingNum = i;
+  for (let i = 0; i < uniqueNums.length; i++) {
+    if (uniqueNums[i] !== i) {
+      return  i;
     }
   }
-
-  return n;
 }
 console.log(getMissingNumber([3, 0, 1]));
 console.log(getMissingNumber([9, 6, 4, 2, 3, 5, 7, 0, 1]));
 console.log(getMissingNumber([0, 1]));
-console.log(getMissingNumber([1, 2, 3, 5]));
 console.log(getMissingNumber([0, 1, 1, 2, 4]));
+console.log(getMissingNumber([1, 2, 3, 5]));
