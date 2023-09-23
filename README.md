@@ -1,6 +1,6 @@
 # Personal Portfolio
 
-![Profile Image](./iamges/profile.png)
+![Profile Image](./images/profile.png)
 
 Hi there! here you can find the first challenge responsive html-css profile
 
