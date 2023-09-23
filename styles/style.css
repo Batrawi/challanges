@@ -200,12 +200,4 @@ p {
   .hero-section {
     margin-top: 88px;
   }
-
-  .hero-content {
-    width: 50%;
-  }
-
-  .img-container {
-    display: flex;
-  }
 }
